@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+@font-face {
+  font-family: "general";
+  src: url(/fonts/GeneralSans-Variable.ttf);
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background: #cfcfcf;
+  color: #ffffff;
+}
+
+.ui {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "general";
+  overflow: hidden;
+}
+
+.ui-buttons {
+  bottom: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  .item {
+    text-align: center;
+    font-family: "general";
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: black;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+    &:hover {
+      background: #000000;
+      color: #ffffff;
+    }
+    &.selected {
+      background: #000000;
+      color: #ffffff;
+    }
+  }
+}
+
+.ui-name {
+  top: 10%;
+  height: 4rem;
+  font-size: 1.3rem;
+  line-height: 4rem;
+  width: 400px;
+  .ui-name-child {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    h1 {
+      text-align: center;
+      width: 100%;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.links {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  .link {
+    padding: .1rem  1.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all .3s ease-in;
+    a {
+      font-family: "general";
+      color: black;
+      text-decoration: none;
+      font-size: 0.8rem;
+      line-height: 2rem;
+    }
+    &:hover {
+      a {
+        color: #fff;
+      }
+      background: rgb(0, 0, 0);
+      border: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .ui-name {
+    width: 100%;
+  }
+  .ui-buttons {
+    gap: 0.3rem;
+    .item {
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      /* padding: .3rem .5rem; */
+    }
+  }
+}
