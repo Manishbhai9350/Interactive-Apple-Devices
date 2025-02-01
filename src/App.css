@@ -112,4 +112,7 @@ main {
       /* padding: .3rem .5rem; */
     }
   }
+  .ui-name .ui-name-child h1 {
+    font-size:2rem
+  }
 }

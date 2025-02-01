@@ -109,7 +109,7 @@ const Experience = () => {
             <boxGeometry args={[.1,.2,.1]} />
             <meshStandardMaterial color={'red'} transparent opacity={.5} />
           </mesh>
-    <CameraControls maxPolarAngle={Math.PI/2.5} minPolarAngle={-Math.PI/2} ref={Camera} />
+    <CameraControls maxDistance={2} minDistance={.4} maxPolarAngle={Math.PI/2.5} minPolarAngle={-Math.PI/2} ref={Camera} />
     {/* <CameraControls ref={Camera} makeDefault /> */}
     <Macbook position={[0,0,0]} ref={macbook} />
     {/* <Ipad position={[-.55,.4,-.05]} ref={ipad} /> */}
