@@ -9,7 +9,7 @@ import { Group, Mesh, SRGBColorSpace } from "three";
 import { degToRad } from "three/src/math/MathUtils.js";
 import gsap from "gsap";
 import { useAtom } from "jotai";
-import { HoverAtom, SelectedAtom } from "../Utils/HoverAtom";
+import { HoverAtom, SelectedAtom } from "../Utils/HoverAtom.jsx";
 import * as THREE from "three";
 
 

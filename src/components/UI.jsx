@@ -1,8 +1,8 @@
 import Item from "./Item";
 import { useAtom } from "jotai";
-import { SelectedAtom } from "../Utils/HoverAtom";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { SelectedAtom } from "../Utils/HoverAtom";
 
 const UI = () => {
   const [selectedItem, setSelectedItem] = useAtom(SelectedAtom);

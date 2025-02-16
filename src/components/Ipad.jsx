@@ -1,6 +1,6 @@
 import React, { forwardRef, useEffect, useRef } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
-import { HoverAtom , SelectedAtom } from "../Utils/HoverAtom";
+import { HoverAtom , SelectedAtom } from "../Utils/HoverAtom.jsx";
 import { useAtom  } from "jotai";
 import gsap from "gsap";
 import { degToRad } from "three/src/math/MathUtils.js";

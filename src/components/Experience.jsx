@@ -6,7 +6,7 @@ import Ipad from './Ipad';
 import Iphone from './Iphone';
 // Declare module augmentations for the missing declaration files
 import { useAtom } from "jotai"
-import { SelectedAtom } from "../Utils/HoverAtom"
+import { SelectedAtom } from "../Utils/HoverAtom.jsx"
 
 const Experience = () => {
   const Camera = useRef(null)

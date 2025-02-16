@@ -1,6 +1,6 @@
 import { forwardRef, useEffect, useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
-import { HoverAtom , SelectedAtom } from "../Utils/HoverAtom";
+import { HoverAtom , SelectedAtom } from "../Utils/HoverAtom.jsx";
 import { useAtom } from 'jotai'
 import gsap from 'gsap'
 export default forwardRef(function Iphone({...props},ref) {
